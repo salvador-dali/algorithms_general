@@ -1,0 +1,22 @@
+read more about
+Catalan, Shroder Narayana, Motzkin numbers, twelvefold way
+http://en.wikipedia.org/wiki/Pisano_period
+http://codegolf.stackexchange.com/questions/8629/fastest-semiprime-factorization
+http://wildaboutmath.com/2011/10/24/a-challenging-11111-puzzle/
+http://en.wikipedia.org/wiki/Jordan%27s_totient_function
+http://www.codechef.com/wiki/tutorial-expectation
+http://en.wikipedia.org/wiki/Lah_number
+http://en.wikipedia.org/wiki/Stirling_number
+http://en.wikipedia.org/wiki/Coupon_collector%27s_problem
+
+- rope data structure
+- spatial indexes
+- R-tree
+- KD-tree
+- BSP tree
+- disjoint set
+- leaky counter
+- streaming k-means
+- quantiles via t-digest
+
+http://highscalability.com/blog/category/example
