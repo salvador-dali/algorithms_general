@@ -11,6 +11,6 @@ def getChocolates(a, b, c):
     return chocolate
 
 
-for i in range (0, int(raw_input())):
+for i in range(input()):
     a, b, c = map(int, raw_input().split())
     print getChocolates(a, b, c)

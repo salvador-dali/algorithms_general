@@ -2,14 +2,14 @@
 package main
 
 import (
-    "fmt"
-    "math/big"
+	"fmt"
+	"math/big"
 )
 
 func main() {
 	n := int64(0)
 	fmt.Scanf("%d", &n)
-    x := new(big.Int)
-    x.MulRange(1, n)
-    fmt.Println(x)
+	x := new(big.Int)
+	x.MulRange(1, n)
+	fmt.Println(x)
 }

@@ -11,6 +11,6 @@ def numSquares(a, b):
     return num
 
 
-for i in xrange(int(raw_input())):
+for i in xrange(input()):
     a, b = map(int, raw_input().split())
     print numSquares(a, b)

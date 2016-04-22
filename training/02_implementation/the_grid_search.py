@@ -35,7 +35,7 @@ def submatrix_search(M, sM):
     return 0
 
 
-for i in xrange(int(raw_input())):
+for i in xrange(input()):
     a, b = map(int, raw_input().split())
     M = [raw_input() for j in xrange(a)]
 
