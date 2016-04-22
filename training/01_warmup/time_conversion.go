@@ -1,16 +1,17 @@
 // https://www.hackerrank.com/challenges/time-conversion
 package main
+
 import (
 	"fmt"
 	"strconv"
 )
 
-func superFunc(s string)string{
-	if s == "12:00:00AM"{
+func superFunc(s string) string {
+	if s == "12:00:00AM" {
 		return "00:00:00"
 	}
 
-	if s == "12:00:00PM"{
+	if s == "12:00:00PM" {
 		return "12:00:00"
 	}
 
@@ -19,11 +20,11 @@ func superFunc(s string)string{
 	second := s[6:8]
 	t := string(s[8])
 
-	if t == "P"{
+	if t == "P" {
 		if hour == 12 {
 			return s[0:8]
 		}
-		return strconv.Itoa(hour + 12) + ":" + minute + ":" + second
+		return strconv.Itoa(hour+12) + ":" + minute + ":" + second
 	} else {
 		if hour == 12 {
 			return "00:" + minute + ":" + second
@@ -33,8 +34,8 @@ func superFunc(s string)string{
 	return ""
 }
 
-func main(){
-    s := ""
-    fmt.Scanf("%s", &s)
+func main() {
+	s := ""
+	fmt.Scanf("%s", &s)
 	fmt.Println(superFunc(s))
 }

@@ -1,11 +1,12 @@
 // https://www.hackerrank.com/challenges/plus-minus
 package main
+
 import (
+	"bufio"
 	"fmt"
 	"os"
-	"bufio"
-	"strings"
 	"strconv"
+	"strings"
 )
 
 func main() {
@@ -14,9 +15,9 @@ func main() {
 	zero, positive, negative := 0, 0, 0
 	scanner := bufio.NewScanner(os.Stdin)
 	scanner.Scan()
-	for _, v := range (strings.Fields(scanner.Text())) {
+	for _, v := range strings.Fields(scanner.Text()) {
 		num, _ := strconv.Atoi(v)
-		if num > 0{
+		if num > 0 {
 			positive++
 		} else if num < 0 {
 			negative++
@@ -24,7 +25,7 @@ func main() {
 			zero++
 		}
 	}
-	fmt.Printf("%.3f\n", float64(positive)/ float64(n))
-	fmt.Printf("%.3f\n", float64(negative)/ float64(n))
-	fmt.Printf("%.3f\n", float64(zero)/ float64(n))
+	fmt.Printf("%.3f\n", float64(positive)/float64(n))
+	fmt.Printf("%.3f\n", float64(negative)/float64(n))
+	fmt.Printf("%.3f\n", float64(zero)/float64(n))
 }
