@@ -16,7 +16,7 @@ def reduceHash(d1, s):
 
     return d_new
 
-num = int(raw_input())
+num = input()
 hash1 = dictFromString(raw_input())
 
 for i in range(1, num):

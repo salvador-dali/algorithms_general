@@ -1,5 +1,6 @@
 //https://www.hackerrank.com/challenges/two-strings
 package main
+
 import "fmt"
 
 func subst(s1 string, s2 string) bool {

@@ -7,7 +7,4 @@ def isPangram(s):
 
     return len(hash) == 27
 
-if isPangram(raw_input()):
-    print 'pangram'
-else:
-    print 'not pangram'
+print 'pangram' if isPangram(raw_input()) else 'not pangram'

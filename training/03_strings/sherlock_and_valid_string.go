@@ -1,8 +1,9 @@
 package main
+
 import "fmt"
 
 func isCorrect(s string) bool {
-	m1, m2 := map [rune]int{}, map [int]int{}
+	m1, m2 := map[rune]int{}, map[int]int{}
 	for _, v := range s {
 		m1[v]++
 	}
@@ -15,7 +16,7 @@ func isCorrect(s string) bool {
 		return true
 	}
 
-	if len(m2) > 2{
+	if len(m2) > 2 {
 		return false
 	}
 
@@ -28,11 +29,11 @@ func isCorrect(s string) bool {
 }
 
 func main() {
-    s := ""
-    fmt.Scanf("%s", &s)
-    if isCorrect(s){
-        fmt.Println("YES")
-    } else {
-        fmt.Println("NO")
-    }
+	s := ""
+	fmt.Scanf("%s", &s)
+	if isCorrect(s) {
+		fmt.Println("YES")
+	} else {
+		fmt.Println("NO")
+	}
 }
