@@ -17,7 +17,7 @@ def sameElements(arr):
 
     return s
 
-for i in xrange(int(raw_input())):
+for i in xrange(input()):
     raw_input()
     arr = list(map(int, raw_input().split()))
     print sameElements(arr)

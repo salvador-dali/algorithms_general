@@ -1,5 +1,4 @@
 # https://www.hackerrank.com/challenges/runningtime
-
 m, arr, num = input(), map(int, raw_input().split()), 0
 for j in range(1, len(arr)):
     key = arr[j]

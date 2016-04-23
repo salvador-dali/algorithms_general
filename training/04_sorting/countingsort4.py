@@ -1,7 +1,6 @@
 # https://www.hackerrank.com/challenges/countingsort4
-
 arr = []
-for i in xrange(int(raw_input())):
+for i in xrange(input()):
     a, b = raw_input().split()
     arr.append([int(a), b, i])
 

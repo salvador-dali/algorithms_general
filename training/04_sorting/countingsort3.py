@@ -13,7 +13,7 @@ def countLess(arr):
     return l1
 
 arr = []
-for i in xrange(int(raw_input())):
+for i in xrange(input()):
     t = raw_input().split()
     arr.append(int(t[0]))
 
