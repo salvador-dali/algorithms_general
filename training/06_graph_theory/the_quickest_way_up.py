@@ -1,6 +1,5 @@
 # https://www.hackerrank.com/challenges/the-quickest-way-up
 # create a graph from the board and then use BFS to find the best path from start to end
-
 import Queue
 def snakes_ladders(ladders, snakes):
     # constructs a graph from the information from the puzzle
@@ -36,7 +35,8 @@ def convert(s):
         arr.append(map(int, i.split(',')))
     return arr
 
-l = '22,54'
-s = '79,17 67,7 89,25 69,23'
+for i in xrange(int(raw_input())):
+    raw_input()
+    s, l = raw_input(), raw_input()
 
-print snakes_ladders(convert(l), convert(s))
+    print snakes_ladders(convert(s), convert(l))

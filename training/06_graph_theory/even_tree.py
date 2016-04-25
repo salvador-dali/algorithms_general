@@ -1,3 +1,4 @@
+# https://www.hackerrank.com/challenges/even-tree
 # you can remove the edge only if the number of connected components would be equal to 2
 # and the number of edges in both connected components is even
 # we need to count the number of such divisions
