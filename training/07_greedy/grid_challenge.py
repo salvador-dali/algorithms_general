@@ -12,7 +12,7 @@ def grid_challenge(arr):
 
     return True
 
-for _ in xrange(int(raw_input())):
-    num = int(raw_input())
+for _ in xrange(input()):
+    num = input()
     arr = [raw_input() for i in xrange(num)]
     print 'YES' if grid_challenge(arr) else 'NO'
