@@ -1,8 +1,9 @@
 //https://www.hackerrank.com/challenges/candies/
 package main
+
 import (
-	"fmt"
 	"bufio"
+	"fmt"
 	"os"
 	"strconv"
 )
@@ -27,19 +28,18 @@ func getSolution(arr []int) int {
 		res[i] = 1
 	}
 
-
-	for i := 0; i < len(arr) - 1; i++ {
-		if arr[i] < arr[i + 1] {
-			res[i + 1] = res[i] + 1
+	for i := 0; i < len(arr)-1; i++ {
+		if arr[i] < arr[i+1] {
+			res[i+1] = res[i] + 1
 		}
 	}
 
 	for i := len(arr) - 1; i >= 1; i-- {
-		if arr[i - 1] > arr[i] {
-			if res[i-1] > res[i] + 1 {
-				res[i - 1] = res[i - 1]
+		if arr[i-1] > arr[i] {
+			if res[i-1] > res[i]+1 {
+				res[i-1] = res[i-1]
 			} else {
-				res[i - 1] = res[i] + 1
+				res[i-1] = res[i] + 1
 			}
 		}
 	}
@@ -51,7 +51,7 @@ func getSolution(arr []int) int {
 	return val
 }
 
-func main(){
+func main() {
 	arr := readManyNumbers()
 	fmt.Println(getSolution(arr))
 }

@@ -1,11 +1,10 @@
 # https://www.hackerrank.com/challenges/stockmax
-# one thing to notice is that the best strategy is to find the biggest element from the list and to trade at this point
-# and to start looking for the next maximum element
+# one thing to notice is that the best strategy is to find the biggest element from the list and to
+# trade at this point and to start looking for the next maximum element
 def stockmax(arr):
     s, cur, l, index = 0, 0, len(arr), 0
 
     while index < l:
-        #print
         maxValue, index = 0, cur
         for i in xrange(cur, len(arr)):
             if arr[i] >= maxValue:
@@ -13,10 +12,8 @@ def stockmax(arr):
                 index = i
 
         additional = (index - cur) * maxValue - sum(arr[cur:index])
-        #print cur, index
         s += additional
         cur = index + 1
-        #print additional
 
     return s
 

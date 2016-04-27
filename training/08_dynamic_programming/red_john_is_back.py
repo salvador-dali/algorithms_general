@@ -26,5 +26,5 @@ def sieve(n):
     return [i for i, k in enumerate(nums) if k]
 
 
-for i in xrange(int(raw_input())):
+for i in xrange(input()):
     print len(sieve(numOfPossibilities(input())))

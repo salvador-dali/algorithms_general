@@ -3,8 +3,8 @@
 # 6, 8, 1, 1, 6 and their positions
 # 0, 1, 2, 3, 4
 # looking at them from the reverse order, one can see that if we are now in the position 4,
-# the best play is to grab 6, in position 3 then 1 + 6, position 2 - then 1 + 1 + 6. In all the cases the opponent will
-# have 0
+# the best play is to grab 6, in position 3 then 1 + 6, position 2 - then 1 + 1 + 6.
+# In all the cases the opponent will have 0
 # if we are in position 1, then we can take:
 # only 8 which means that our opponent will take the best for him (all values and gives use 0)
 # we will populate our DP table in reverse order where keys are positions and
