@@ -59,8 +59,8 @@ func findSolution(a1, a2 []int) int {
 }
 
 func main() {
-//	arr1 := []int{1, 1, 1, 1, 2, 2, 3}
-//	arr2 := []int{1, 1, 1, 1, 2, 2, 2}
+	//	arr1 := []int{1, 1, 1, 1, 2, 2, 3}
+	//	arr2 := []int{1, 1, 1, 1, 2, 2, 2}
 	arr1 := []int{1, 2, 3}
 	arr2 := []int{1, 2, 2}
 	findSolution(arr1, arr2)
