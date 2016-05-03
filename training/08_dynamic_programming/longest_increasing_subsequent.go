@@ -1,8 +1,9 @@
 //https://www.hackerrank.com/challenges/longest-increasing-subsequent/
 package main
+
 import (
-	"fmt"
 	"bufio"
+	"fmt"
 	"os"
 	"strconv"
 	"strings"
@@ -10,8 +11,8 @@ import (
 
 func bisect_left(arr []int, n int) int {
 	lo, hi := 0, len(arr)
-	for ; hi > lo; {
-		mid := lo + (hi - lo) / 2
+	for hi > lo {
+		mid := lo + (hi-lo)/2
 		if arr[mid] >= n {
 			hi = mid
 		} else {
@@ -31,10 +32,9 @@ func patience(arr []int) int {
 			piles_top[pos] = v
 		}
 	}
-	
+
 	return len(piles_top)
 }
-
 
 func readManyNumbers() []int {
 	T := 0
@@ -49,6 +49,6 @@ func readManyNumbers() []int {
 	return numbers
 }
 
-func main(){
+func main() {
 	fmt.Println(patience(readManyNumbers()))
 }
