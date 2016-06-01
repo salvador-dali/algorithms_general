@@ -84,10 +84,8 @@ func readTwoArrays() ([]int, []int) {
 		1 2 15 12 65		actual array
 		8 1 5 9 52			actual array
 	*/
-	T := 0
+	T, reader := 0, bufio.NewReader(os.Stdin)
 	fmt.Scanf("%d", &T)
-
-	reader := bufio.NewReader(os.Stdin)
 	arr1, arr2 := make([]int, T), make([]int, T)
 
 	text, _ := reader.ReadString('\n')
@@ -103,6 +101,44 @@ func readTwoArrays() ([]int, []int) {
 	}
 
 	return arr1, arr2
+}
+
+func readManyTwoArrays() {
+	/*
+		Read many pairs of arrays. Each pair has the same length
+
+		3 					number of pairs
+		3					length of arrays in the first pair
+		1 3 4				1st array in the pair
+		5 3 1				2nd array in the pair
+		2					length of arrays in the second pair
+		1 1					...
+		1 1
+		2
+		2 2
+		3 3
+	*/
+	T, reader := 0, bufio.NewReader(os.Stdin)
+	fmt.Scanf("%d", &T)
+	for i := 0; i < T; i++ {
+		text, _ := reader.ReadString('\n')
+		num, _ := strconv.Atoi(strings.TrimRight(text, "\n"))
+
+		arr1, arr2 := make([]int, num), make([]int, num)
+		text, _ = reader.ReadString('\n')
+		for i, v := range strings.Fields(text) {
+			num, _ := strconv.Atoi(v)
+			arr1[i] = num
+		}
+
+		text, _ = reader.ReadString('\n')
+		for i, v := range strings.Fields(text) {
+			num, _ := strconv.Atoi(v)
+			arr2[i] = num
+		}
+
+		fmt.Println(arr1, arr2)
+	}
 }
 
 func readManyArraysOfSameLength() [][]int {
